@@ -44,3 +44,29 @@ rownames(get_guns) <- c("Female", "Male")
 
 ```
 
+I'm the collaborator Sidney the Dancing Queen and I am going to do chi-square
+
+Question for the data:
+Is there an association between sex and the opinion of level of difficulty of obtatining a gun? (Gun controll recommendation)
+
+Is perception of gun control access independent of sex?
+
+Chi-Square
+```{r}
+#table of proportions by row
+gun_prop <- prop.table(as.matrix(get_guns), 1) #this gets the proportion for the total for the table, want proportions with in rows.. add (, 1) at the end
+
+gun_prop
+
+
+#perform chi-square
+#x is the chi, different than x. be sure to have symbol in markdown
+guns_x2 <- chisq.test(get_guns)
+guns_x2
+
+
+```
+
+Recommended gvmt action on gun access differs significatly for males and females ($\chi^2$(`r guns_x2$parameter`) = ...., p < 0.001)
+
+not enough info for the audiance!!! give more values, say differences, and such. 
