@@ -1,0 +1,12 @@
+---
+title: "Gun Control Chi Square"
+author: "Daphne Virlar"
+date: "11/14/2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+I'm Daphne and I'm adding text to test whether or not Sidney can get this file form git.
